@@ -1,21 +1,25 @@
-let eded1 = prompt("Ilk ededi daxil edin:")
-let emel = prompt("Gormek isdediyiniz emeli qeyd edin:")
-let eded2 = prompt("IKinci ededi daxil edin:")
+let a = Number(prompt("Ilk ededi daxil edin:"))
+let b = Number(prompt("IKinci ededi daxil edin:"))
+let operator = prompt("Gormek isdediyiniz emeli qeyd edin:")
 
-switch (emel) {
-    case "*":
-        console.log(eded1 * eded2)
-        break;
-    case "-":
-        console.log(eded1 - eded2)
-        break;
-    case "/":
-        console.log(eded1 / eded2)
-        break;
-    case "+":
-        console.log(eded1 + eded2)
-        break;
-    default:
-        console.log("Emeli duzgun daxil edin!!!")
-        break;
+const calc = (num1, num2, operator) => {
+    switch (operator) {
+        case "*":
+            console.log(a * b)
+            break;
+        case "-":
+            console.log(a - b)
+            break;
+        case "/":
+            console.log(a / b)
+            break;
+        case "+":
+            console.log(a + b)
+            break;
+        default:
+            console.log("Emeli duzgun daxil edin!!!")
+            break;
+    }
 }
+
+calc(a,b,operator);
